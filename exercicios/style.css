@@ -4,7 +4,15 @@
 
 :root {
     --black01: #212121;
+    /* Cinza escuro- Fundo Pagina */
+    --black02: #333333;
+    --black03: #444444;
     --white01: #f2f2f2;
+    /* Cinza claro - Fundo Pagina */
+    --white02: #CCCCCC;
+
+    --amarelo-claro: #FFFFCC;
+    --bege: #F5F5DC;
 
     --font-titulo-subtitulo: Arial, Helvetica, sans-serif;
     --font-texto-longo: 'Times New Roman', Times, serif;
@@ -14,19 +22,29 @@
 
 body {
     background-color: var(--white01);
-    color: var(--black01);
+    color: var(--black02);
 }
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--black01);
-        color: var(--white01);
+        color: var(--white02);
     }
+}
+h1 {
+    text-align: center;
 }
 h1, h2, h3, h4 {
     font-family: var(--font-titulo-subtitulo);
 }
 p {
     font-family: var(--font-texto-longo);
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: justify;
+    text-indent: 1em;
+    /* letter-spacing: 0.05px;
+    word-spacing: 0.05px;
+    hyphens: auto; */
 }
 img, video {
     border-radius: 5px;
