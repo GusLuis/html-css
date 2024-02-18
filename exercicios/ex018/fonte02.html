@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/exercicios/favicon.ico" type="image/x-icon">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'harry';
+            src: url(fonte/harry.TTF) /* format('truetype')*/ ;
+            font-weight: normal;
+            font-style: normal;
+
+            /* 
+            Tipos de Fonte: 
+
+            - opentype: (otf)
+            - Truetype: (ttf)
+            - Embedded-opentype: 
+            - Truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+        }
+        @font-face {
+            font-family: 'kaku';
+            src: url(fonte/kaku.ttf);
+        }
+        @font-face {
+            font-family: 'parkinsons';
+            src: url(fonte/Parkinsons.ttf);
+        }
+        h1 {
+            font-family: 'harry';
+            font-size: 5em;
+            }
+        h2 {
+            font-family: 'kaku';
+            font-size: 3em;
+        }
+        p {
+            font-family: 'parkinsons';
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>them string central worry can education fly liquid school income square straw simplest sky fog fourth climb coast stick chosen just happy dead oldest zero heart line satisfied tent feathers gift carry pale born charge cannot roar enjoy pour flew sad mail plane clearly acres condition yet layers</p>
+    <h2>Subtitulo</h2>
+    <p>claws duck sick became zoo crop off changing jar breathing frame thrown anyone judge daily large matter quietly especially minerals eventually young easy national straw number wash doctor natural temperature skill religious pair salt cloud drop properly wherever in sport school serve related exchange charge nest column</p>
+</body>
+</html>
