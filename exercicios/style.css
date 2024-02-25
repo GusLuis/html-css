@@ -19,7 +19,6 @@
     --font-decorativa: 'Bebas Neue', cursive;
 }
 
-
 body {
     background-color: var(--white01);
     color: var(--black02);
@@ -36,9 +35,10 @@ h1 {
     font-style - font-weight - font-size - font-family
     */
     font-variant: small-caps;
-    font: none bold 1em var(--font-titulo-subtitulo);
+    font: none bold 2em var(--font-titulo-subtitulo);
     text-align: center;
     text-shadow: 0.1em 0.1em 0.2em rgba(255, 255, 255, 0.060);
+    font-size: 2.5em;
 }
 h1, h2, h3, h4 {
     font-family: var(--font-titulo-subtitulo);
@@ -59,7 +59,7 @@ img, video {
 }
 a {
     font-weight: bold;
-    color: white;
+    color: brown;
     text-decoration: underline;
 }
 a:hover {
@@ -67,4 +67,10 @@ a:hover {
     font-weight: bolder;
     color: darkred;
     transition-duration: 5ms;
+}
+a:visited {
+    color: aqua;
+}
+a:active {
+    color: yellowgreen;
 }

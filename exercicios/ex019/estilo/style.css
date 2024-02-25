@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: #57805D;
+}
+
+
+#principal {
+    background-color: #5dc551d3;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+.secundario {
+    text-align: left;
+    text-indent: 0.5em;
+    color: white;
+}
+
+.basico {
+    color: #18FF96;
+}
+.intermediario {
+    color: #ffd000e9;
+}
+.avancado {
+    color: #973633c9;
+}
