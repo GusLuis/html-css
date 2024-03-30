@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/exercicios/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/exercicios/style.css">
+    <title>Tabelas</title>
+    <style>
+        table {
+            text-align: center;
+            width: 500px;
+            height: 300px;
+            color: black;
+            background-color: #dedede;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        td {
+            text-align: left;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 2px;
+        }
+        th,#total {
+            background-color: rgb(81, 81, 81);
+            color: white;
+        }
+        #total {
+            font-weight: bold;
+        }
+        .num {
+            text-align: right;
+        }
+        caption {
+            background-color: lightgray;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            color: black;
+        }
+        thead {
+            position: sticky;
+            top: 0;
+            z-index: 11;
+        }
+        tbody > tr:nth-child(2n) /*ou old, even */ {
+            background-color: rgb(152, 152, 152);
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+          TABLE
+            CAPTION
+            THEAD
+              TR, TD, TH
+            TBODY
+              TR, TD, TH
+            TFOOT
+              TR, TD, TH
+     -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/30px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt=""> São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/30px-Bandeira_de_Minas_Gerais.svg.png" alt=""> Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/30px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt=""> Rio de Janeiro</img></td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/30px-Bandeira_da_Bahia.svg.png" alt=""> Bahia</img></td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Paraná</img></td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Rio Grande do Sul</img></td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Pernambuco</img></td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Ceará</img></td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Santa Catarina</img></td>
+                <td class="num">7 610 361</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Goias</img></td>
+                <td class="num">7 056 495</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Maranhão</img></td>
+                <td class="num">6 775 805</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Paraiba</img></td>
+                <td class="num">3 974 687</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Amazonas</img></td>
+                <td class="num">3 941 613</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Espirito Santo</img></td>
+                <td class="num">3 833 712</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Mato Grosso</img></td>
+                <td class="num">3 658 649</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Rio Grande do Norte</img></td>
+                <td class="num">3 302 729</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Piauí</img></td>
+                <td class="num">3 271 199</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Alagoas</img></td>
+                <td class="num">3 127 683</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Distrito Federal</img></td>
+                <td class="num">2 817 381</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Mato Grosso do Sul</img></td>
+                <td class="num">2 757 013</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Sergipe</img></td>
+                <td class="num">2 209 558</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Rondônia</img></td>
+                <td class="num">1 581 196</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Tocantins</img></td>
+                <td class="num">1 511 460</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Acre</img></td>
+                <td class="num">830 018</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Amapá</img></td>
+                <td class="num">733 759</td>
+            </tr>
+            <tr>
+                <td><img src="" alt="">Roraima</img></td>
+                <td class="num">636 707</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td id="total" class="num">203 062 512</td>
+        </tfoot>
+    </table>
+    <br>
+    <table>
+        <caption>População por Região</caption>
+        <thead>
+            <th scope="col">Região</th>
+            <th scope="col" style="width: 100px;">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Região Sudeste</td>
+                <td class="num">84 847 187</td>
+            </tr>
+            <tr>
+                <td>Região Nordeste</td>
+                <td class="num">54 644 582</td>
+            </tr>
+            <tr>
+                <td>Região Sul</td>
+                <td class="num">29 933 315</td>
+            </tr>
+            <tr>
+                <td>Região Norte</td>
+                <td class="num">17 349 619</td>
+            </tr>
+            <tr>
+                <td>Região Centro-Oeste</td>
+                <td class="num">16 287 809</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
