@@ -30,7 +30,7 @@
         header > nav {
             display: flex;
             flex-flow: row wrap;
-            justify-content: flex-end2;
+            justify-content: flex-end;
             align-items: center;
         }
         header > nav > a {

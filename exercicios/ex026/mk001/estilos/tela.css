@@ -18,6 +18,11 @@ header h1 {
     color: black;
 }
 
+menu {
+    display: flex;
+    flex-flow: column;
+}
+
 menu ul {
     list-style: none;
     background-color: rgb(103, 103, 103);
@@ -30,6 +35,7 @@ menu li {border-radius: 10px;
 }
 
 article {
+    padding-top: 15px;
     display: block;
     width: 500px;
     margin: auto;
