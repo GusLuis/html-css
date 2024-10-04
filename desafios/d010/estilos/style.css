@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding:0px;
+}
+
+:root {
+    --cor-fundo: #c5ebd6; 
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+p {
+    text-align: justify;
+}
