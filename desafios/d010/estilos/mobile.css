@@ -1,25 +1,9 @@
 iframe {
     width: 330px;
-    height: 186px;
-    border-radius: 4px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.219);    
+    height: 186px;  
 }
 
-picture {
-    display: flex;
-    flex: auto;
-    justify-content: center;
-    align-items: center;  
-}
-img {
-    border-radius: 4px;
-}
-
-li {
-    display: flex;
-    justify-content: center;
-}
-
-p {
-    text-align: justify;
+main .bugdroid {
+    width: 100%;
+    border: 1px solid black;
 }
