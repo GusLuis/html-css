@@ -1,0 +1,11 @@
+.video iframe {
+    height: 180px;
+}
+
+main .bugdroid {
+    width: 100%;
+}
+
+ul.container {
+    flex-direction: column;
+}
