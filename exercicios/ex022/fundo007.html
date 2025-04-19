@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/exercicios/favicon.ico" type="image/x-icon">
     <title>Alinhamento Vertical</title>
+    <link rel="stylesheet" href="../style.css">
     <style>
         #container {
-            background: purple url(imagens/target001.png);
+            height: 97vh;
+            background-color: aquamarine;
+            padding: 20px;
+            background-image: url(imagens/target001.png);
+            background-position: center;
+            background-repeat: no-repeat;
             background-size: 100% 100%;
+
             position: relative;
-            height: 94vh;
-            padding: 10px;
-            display: flex;
         }
+
         #conteudo {
-            position: absolute;
-            height: 200px;
-            width: 300px;
-            background: yellow url(imagens/target001.png);
+            height: 240px;
+            width: 400px;
+            background-color: blue;
+            background-image: url(imagens/target001.png);
+            background-position: center;
+            background-repeat: no-repeat;
             background-size: 100% 100%;
-            margin: auto;
+
+            position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
     <section id="container">
-        <article id="conteudo"></article>
+        <article id="conteudo">
+
+        </article>
     </section>
 </body>
 </html>
