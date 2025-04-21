@@ -3,213 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/exercicios/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/exercicios/style.css">
     <title>Tabelas</title>
+    <link rel="stylesheet" href="../style.css">
     <style>
         table {
-            text-align: center;
-            width: 500px;
-            height: 300px;
-            color: black;
-            background-color: #dedede;
+            width: 25rem;
             border-collapse: collapse;
-            margin: auto;
         }
-        td {
-            text-align: left;
-        }
-        td, th {
-            border: 1px solid black;
-            padding: 10px;
-            border-radius: 2px;
-        }
-        th,#total {
-            background-color: rgb(81, 81, 81);
-            color: white;
-        }
-        #total {
+
+        caption {
+            padding: .5rem;
+            font-size: 1.2rem;
             font-weight: bold;
+            background-color: #505050;
+            border-radius: 5px;
+        }
+
+        th,td {
+            border: 1px solid;
+            padding: 10px;
+        }
+
+        th:first-child, td:first-child {
+            border-radius: 5px 0px 0px 0px;
+        }
+        th:last-child, td:last-child {
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        thead, tfoot {
+            background-color: #808080;
+            color: black;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px; 
+        }
+
+        /* 
+        
+        EVEN = PAR
+        ODD = IMPAR 
+        2n = 2 em 2
+        2n-1 = 2 em 2 mas começando em impar
+
+        */
+        tbody > tr:nth-child(2n) {
+            background-color: #5050502b;
+        }
+
+        tbody {
+            background-color: #CCCCCC;
+            color: black;
         }
         .num {
             text-align: right;
         }
-        caption {
-            background-color: lightgray;
-            font-size: 1.5em;
-            font-weight: bold;
-            padding: 5px;
-            color: black;
-        }
-        thead {
-            position: sticky;
-            top: -1px;
-            z-index: 11;
-        }
-        tbody > tr:nth-child(2n) /*ou old, even */ {
-            background-color: rgb(152, 152, 152);
-        }
     </style>
 </head>
 <body>
+    <!-- https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o -->
     <h1>Uso de Tabelas Grandes</h1>
-    <!-- 
-        ANATOMIA PARA TABELAS GRANDES
-          TABLE
-            CAPTION
-            THEAD
-              TR, TD, TH
-            TBODY
-              TR, TD, TH
-            TFOOT
-              TR, TD, TH
-     -->
+
     <table>
         <caption>População das Unidades Federativas</caption>
         <thead>
-            <th scope="col">Estado</th>
-            <th scope="col" style="width: 100px;">População</th>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 30%;">População</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/30px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt=""> São Paulo</td>
-                <td class="num">44 411 238</td>
+                <td>São Paulo</td>
+                <td class="num">45 973 194</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/30px-Bandeira_de_Minas_Gerais.svg.png" alt=""> Minas Gerais</td>
-                <td class="num">20 538 718</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 322 691</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/30px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt=""> Rio de Janeiro</img></td>
-                <td class="num">16 054 524</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 219 679</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/30px-Bandeira_da_Bahia.svg.png" alt=""> Bahia</img></td>
-                <td class="num">14 141 626</td>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/30px-Bandeira_do_Paran%C3%A1.svg.png" alt=""> Paraná</img></td>
-                <td class="num">11 444 380</td>
+                <td>Paraná</td>
+                <td class="num">11 824 665</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/30px-Bandeira_do_Rio_Grande_do_Sul.svg.png" alt=""> Rio Grande do Sul</img></td>
-                <td class="num">10 882 965</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/30px-Bandeira_de_Pernambuco.svg.png" alt=""> Pernambuco</img></td>
-                <td class="num">9 058 931</td>
+                <td>Pernambuco</td>
+                <td class="num">11 229 915</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/30px-Bandeira_do_Cear%C3%A1.svg.png" alt=""> Ceará</img></td>
-                <td class="num">8 794 957</td>
+                <td>Ceará</td>
+                <td class="num">9 233 656</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Par%C3%A1.svg/30px-Bandeira_do_Par%C3%A1.svg.png" alt=""> Santa Catarina</img></td>
-                <td class="num">7 610 361</td>
+                <td>Pará</td>
+                <td class="num">8 664 306</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Goi%C3%A1s.svg/30px-Flag_of_Goi%C3%A1s.svg.png" alt=""> Goiás</img></td>
-                <td class="num">7 056 495</td>
+                <td>Santa Catarina</td>
+                <td class="num">8 058 441</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranh%C3%A3o.svg/30px-Bandeira_do_Maranh%C3%A3o.svg.png" alt=""> Maranhão</img></td>
-                <td class="num">6 775 805</td>
+                <td>Goiás</td>
+                <td class="num">7 350 483</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/30px-Bandeira_da_Para%C3%ADba.svg.png" alt=""> Paraíba</img></td>
-                <td class="num">3 974 687</td>
+                <td>Maranhão</td>
+                <td class="num">7 350 483</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bandeira_do_Amazonas.svg/30px-Bandeira_do_Amazonas.svg.png" alt=""> Amazonas</img></td>
-                <td class="num">3 941 613</td>
+                <td>Amazonas</td>
+                <td class="num">4 281 209</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bandeira_do_Esp%C3%ADrito_Santo.svg/30px-Bandeira_do_Esp%C3%ADrito_Santo.svg.png" alt="">Espirito Santo</img></td>
-                <td class="num">3 833 712</td>
+                <td>Paraíba</td>
+                <td class="num">4 145 040</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/30px-Bandeira_de_Mato_Grosso.svg.png" alt=""> Mato Grosso</img></td>
-                <td class="num">3 658 649</td>
+                <td>Espírito Santo</td>
+                <td class="num">4 102 129</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeira_do_Rio_Grande_do_Norte.svg/30px-Bandeira_do_Rio_Grande_do_Norte.svg.png" alt=""> Rio Grande do Norte</img></td>
-                <td class="num">3 302 729</td>
+                <td>Mato Grosso</td>
+                <td class="num">3 836 399</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bandeira_do_Piau%C3%AD.svg/30px-Bandeira_do_Piau%C3%AD.svg.png" alt=""> Piauí</img></td>
-                <td class="num">3 271 199</td>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 446 071</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bandeira_de_Alagoas.svg/30px-Bandeira_de_Alagoas.svg.png" alt=""> Alagoas</img></td>
-                <td class="num">3 127 683</td>
+                <td>Piauí</td>
+                <td class="num">3 375 646</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg/30px-Bandeira_do_Distrito_Federal_%28Brasil%29.svg.png" alt=""> Distrito Federal</img></td>
-                <td class="num">2 817 381</td>
+                <td>Alagoas</td>
+                <td class="num">3 220 104</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg/30px-Bandeira_de_Mato_Grosso_do_Sul.svg.png" alt=""> Mato Grosso do Sul</img></td>
-                <td class="num">2 757 013</td>
+                <td>Distrito Federal</td>
+                <td class="num">2 982 818</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bandeira_de_Sergipe.svg/30px-Bandeira_de_Sergipe.svg.png" alt=""> Sergipe</img></td>
-                <td class="num">2 209 558</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 901 895</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/30px-Bandeira_de_Rond%C3%B4nia.svg.png" alt=""> Rondônia</img></td>
-                <td class="num">1 581 196</td>
+                <td>Sergipe</td>
+                <td class="num">2 291 077</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/30px-Bandeira_do_Tocantins.svg.png" alt=""> Tocantins</img></td>
-                <td class="num">1 511 460</td>
+                <td>Rondônia</td>
+                <td class="num">1 746 227</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bandeira_do_Acre.svg/30px-Bandeira_do_Acre.svg.png" alt=""> Acre</img></td>
-                <td class="num">830 018</td>
+                <td>Tocantins</td>
+                <td class="num">1 577 342</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bandeira_do_Amap%C3%A1.svg/30px-Bandeira_do_Amap%C3%A1.svg.png" alt=""> Amapá</img></td>
-                <td class="num">733 759</td>
+                <td>Acre</td>
+                <td class="num">880 631</td>
             </tr>
             <tr>
-                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bandeira_de_Roraima.svg/30px-Bandeira_de_Roraima.svg.png" alt=""> Roraima</img></td>
-                <td class="num">636 707</td>
+                <td>Amapá</td>
+                <td class="num">802 837</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">716 793</td>
             </tr>
         </tbody>
         <tfoot>
-            <th scope="row">Total de Habitantes</th>
-            <td id="total" class="num">203 062 512</td>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>212 583 750</strong></td>
+            </tr>
         </tfoot>
     </table>
-    <br>
-    <table>
-        <caption>População por Região</caption>
-        <thead>
-            <th scope="col">Região</th>
-            <th scope="col" style="width: 100px;">População</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Região Sudeste</td>
-                <td class="num">84 847 187</td>
-            </tr>
-            <tr>
-                <td>Região Nordeste</td>
-                <td class="num">54 644 582</td>
-            </tr>
-            <tr>
-                <td>Região Sul</td>
-                <td class="num">29 933 315</td>
-            </tr>
-            <tr>
-                <td>Região Norte</td>
-                <td class="num">17 349 619</td>
-            </tr>
-            <tr>
-                <td>Região Centro-Oeste</td>
-                <td class="num">16 287 809</td>
-            </tr>
-        </tbody>
-    </table>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veniam dolorem ducimus totam obcaecati odit dolor eveniet dolore, numquam eaque excepturi vero sit veritatis modi culpa at, repudiandae blanditiis ad.
+        Amet eaque adipisci autem maiores a. Dolorem asperiores corporis aspernatur illo dignissimos cupiditate. Ipsam porro totam recusandae quidem error dolores, ratione ad enim autem quam a, voluptatum quaerat provident suscipit.
+        Reiciendis ducimus sint nesciunt saepe itaque neque laborum quidem deserunt, eaque ea similique, laboriosam consequatur soluta sequi! Amet, quam ad harum doloribus dignissimos, ipsum, officiis corrupti blanditiis hic vero laboriosam.
+        Qui doloribus dolor obcaecati ea veritatis dolorum minima enim reiciendis dicta modi? Exercitationem dolores debitis pariatur perferendis voluptatem provident, corporis saepe doloribus reprehenderit est quas. Sed veniam nulla eaque minus.
+        Deserunt rem illo id mollitia dolore labore molestias fugit quaerat doloribus, autem, eum, cum repellendus. Adipisci dolorem eligendi est totam deserunt! Quam assumenda accusamus ipsa non sapiente ex explicabo mollitia!
+        Quo animi ullam debitis voluptatibus laborum, reiciendis earum alias? Porro, adipisci dignissimos atque quas rem nulla assumenda incidunt nihil placeat! Quidem quo sed asperiores velit necessitatibus quaerat. Facilis, ducimus ratione?
+        Incidunt veritatis esse reiciendis, rem dignissimos laudantium sapiente doloremque voluptatum, nemo architecto impedit quod? Pariatur accusantium vel sed laboriosam distinctio sit nostrum placeat tempore, animi qui, esse consectetur sapiente inventore?
+        Pariatur nisi totam, nobis ullam necessitatibus eos libero eveniet quod? Vero ducimus ad recusandae voluptatum, nulla dolorem ab voluptatem excepturi obcaecati nihil doloremque aspernatur accusamus magni architecto? Iure, dolorem nihil!
+        Nesciunt deleniti mollitia reprehenderit laborum nihil soluta error eveniet, molestiae ipsum totam et enim dolorum atque temporibus inventore in illum exercitationem rem accusantium nemo aperiam numquam. Placeat aspernatur suscipit nostrum?
+        Nam officiis repudiandae tenetur. Incidunt quam adipisci architecto deserunt laborum commodi dolorum beatae voluptate, eligendi culpa! Voluptates dolorum, eum nisi doloremque soluta magni maiores blanditiis explicabo harum architecto, eaque ipsum?
+        Nam eos asperiores ipsam, aut at enim nihil expedita omnis doloribus ipsum doloremque illum earum suscipit iure esse possimus autem nostrum necessitatibus ad qui quam explicabo inventore placeat? Eligendi, tempora.
+        Aspernatur id omnis a quae delectus facere distinctio unde necessitatibus reprehenderit? Aperiam officiis, facere qui impedit fugiat nisi fuga laboriosam at animi voluptate consectetur optio repudiandae laborum sunt fugit ipsam?
+        Consectetur placeat exercitationem veniam quos rerum expedita voluptas nulla, excepturi illo impedit dignissimos assumenda est ducimus nihil esse praesentium ipsa aliquam velit. Exercitationem, pariatur obcaecati illum vel nesciunt id ipsum!
+        Quos fuga eius fugiat ratione rem accusamus itaque aliquid ea temporibus autem in, atque veritatis assumenda illum deleniti repellendus voluptatem quas, sequi, distinctio asperiores suscipit amet porro. Aperiam, ipsam dolores.
+        Corrupti sequi rerum a, reiciendis alias asperiores exercitationem ea accusamus facere modi quibusdam laboriosam hic placeat reprehenderit, dolore quisquam suscipit ipsam odio id! Vero totam quod repudiandae sed nostrum sequi.
+        Deleniti, nam. Obcaecati rem quisquam officiis animi mollitia soluta optio quasi. Beatae, doloremque, necessitatibus consequuntur quae amet sint quia, placeat aliquam facere ad optio enim dolorum? Ratione voluptas similique consectetur!
+        Fuga, tenetur omnis nobis placeat dignissimos voluptatem beatae accusamus cumque pariatur nam quis sit, blanditiis cum. Reprehenderit asperiores ex voluptates reiciendis, quis quae eligendi dolorem, consequatur perferendis pariatur perspiciatis iure.
+        Nulla rerum maiores placeat error corporis enim aliquam neque. Aliquam nemo tenetur quia nesciunt perferendis ipsam culpa illo corrupti unde, recusandae quibusdam necessitatibus eos deserunt accusantium! Quaerat corrupti ullam odio.
+        Expedita atque quam quos quo aspernatur veniam dicta ut facilis officiis recusandae sapiente libero ex, ad facere doloremque laborum tenetur, voluptas omnis. Amet repudiandae illo dolorem dicta officia. Quae, commodi?
+        Ratione explicabo nam modi, dignissimos corporis possimus optio inventore. Quod, quasi, consectetur aliquam saepe molestiae fugit laborum non error obcaecati omnis accusamus illo sequi dignissimos necessitatibus expedita soluta cumque? Hic?
+    </p>
 </body>
 </html>
