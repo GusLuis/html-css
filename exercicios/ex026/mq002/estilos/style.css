@@ -1,0 +1,21 @@
+/* Configurações Gerais */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    /* Cor do Curso em Video */
+    text-align: center;
+}
+
+h1 {
+    color: aliceblue;
+    text-shadow: 2px 2px 0px #2038f0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}

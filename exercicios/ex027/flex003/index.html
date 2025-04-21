@@ -6,19 +6,17 @@
     <title>Flexible Box</title>
     <style>
         div.container {
-            background-color: black;
+            background-color: salmon;
+
             display: flex;
-            /* flex-direction: row;
-            flex-wrap: wrap; */
-            flex-flow: column;
-            text-align: center;
-            justify-content: space-evenly;
+            flex-flow: row wrap;
         }
         div.item {
             background-color: lightblue;
-            border: 1px solid black;
+            border: 1px solid;
+            text-align: center;
             padding: 10px;
-            border-radius: 2px;
+
             flex: auto;
         }
     </style>
@@ -32,6 +30,7 @@
         <div class="item">Exemplo de Bloco E</div>
         <div class="item">Exemplo de Bloco F</div>
         <div class="item">Exemplo de Bloco G</div>
+        
     </div>
 </body>
 </html>

@@ -23,12 +23,7 @@ body {
     background-color: var(--white01);
     color: var(--black02);
 }
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--black01);
-        color: var(--white02);
-    }
-}
+
 h1 {
     /* SHORTHAND FONT
     
@@ -73,4 +68,18 @@ a:visited {
 }
 a:active {
     color: yellowgreen;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #f4f0ea;
+        color: var(--black01);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--black01);
+        color: var(--white02);
+    }
 }

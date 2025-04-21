@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="Digite seu Nome" required minlength="5" maxlength="20" autofocus>
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" size="22" required placeholder="Digite seu E-mail">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\d{2}9\d{8}$" placeholder="(XX)XXXXX-XXXX">
+            </p>
+            <!-- Expressões Regulares RegEx -->
+
+            <!-- 
+            
+            Explicação da expressão regular:
+
+                ^: Indica o início da string.
+                \d{2}: Corresponde a exatamente dois dígitos (qualquer DDD).
+                9: Corresponde literalmente ao dígito "9".
+                \d{8}: Corresponde a exatamente oito dígitos.
+                $: Indica o final da string.
+
+            -->
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+</body>
+</html>

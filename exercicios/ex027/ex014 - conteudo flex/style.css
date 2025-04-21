@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+p {
+    margin-bottom: .625rem;
+    text-align: justify;
+} 
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: .625rem;
+    font-size: 1.4rem;
+}
+
+header, section.normal {
+    padding: 1.25rem;
+}
+
+section.flex-content {
+    padding: 1.25rem;
+    background-color: lightgray;
+    
+    display: flex;
+    flex-flow: column wrap;
+}
+
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+
+/* Parte que veio antes para torna o texto responsivel */
+/* O conteúdo pai ficou com display flex fazendo o conteudo filho >  "div media" colocar um flex: 1 1 400px e depois o iframe com width de 99%*/
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article > div.text {
+    flex: 1 1 31.25rem;
+    border: 2px dashed blue;
+}
+
+
+
+/* Permite o video se torna responsivo */
+article > div.media {
+    flex: 1 0 auto;
+    border:  2px dashed red;
+}
+
+div.media > img {
+    display: block;
+    margin: auto;
+    width: 18.75rem;
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 99%;
+}

@@ -6,42 +6,57 @@
     <title>Flexible Box</title>
     <style>
         div.container {
-            background-color: lightsalmon;
+            background-color: salmon;
+
             display: flex;
-            text-align: center;
             flex-flow: row nowrap;
         }
         div.item {
             background-color: lightblue;
-            border: 1px solid black;
-            flex-basis: 100px;
-            padding: 2px;
+            border: 1px solid;
+            text-align: center;
         }
-        div#caixaA {
+
+        div#ca {
             /* flex-shrink: 0;
             flex-grow: 1;
-            flex-basis: 150px; */
-            flex: 5 0 150px;
+            flex-basis: 200px; */
+
+            /* 
+            
+            FLEX GROW + FLEX SHRINK + FLEX BASICS
+
+            padrão e: 0 1 auto ou initial(e a mesma coisa)
+
+            flex: 0 0 auto (não e flexível) ou flex none
+
+            flex: 1 1 auto (totalmente flexível) ou flex auto
+
+            flex= 2 (ou qualquer numero quer dizer que apenas o grow vai mudar)
+            */
+            flex: 1 0 200px;
         }
-        div#caixaB {
-            /* flex-shrink: 1; 
-            flex-grow: 1;
+        div#cb {
+            /* flex-shrink: 1;
+            flex-grow: 4;
             flex-basis: 150px; */
-            flex: 1 1 150px;
+
+            flex: 4 1 150px;
         }
-        div#caixaC {
-            /* flex-shrink: 5;
+        div#cc {
+            /* flex-shrink: 8; 
             flex-grow: 1;
             flex-basis: auto; */
-            flex: 1 5 auto;
+
+            flex: 1 8 auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item" id="caixaA">A</div>
-        <div class="item" id="caixaB">B</div>
-        <div class="item" id="caixaC">C</div>
+        <div class="item" id="ca">A</div>
+        <div class="item" id="cb">B</div>
+        <div class="item" id="cc">C</div>
     </div>
 </body>
 </html>

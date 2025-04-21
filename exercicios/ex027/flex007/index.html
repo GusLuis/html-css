@@ -6,49 +6,34 @@
     <title>Flexible Box</title>
     <style>
         div.container {
-            background-color: lightsalmon;
+            background-color: salmon;
+            height: 100px;
+
             display: flex;
-            text-align: center;
-            flex-flow: row nowrap;
-            align-content: space-evenly;
+            flex-flow: row wrap;
+
+            justify-content: center;
+            align-items: center;
         }
         div.item {
             background-color: lightblue;
-            border: 1px solid black;
-            padding: 20px;
-        }
-        #i1 {
-            order: 0;
-        }
-        #i2 {
-            order: 2;
-        }
-        #i3 {
-            order: -2;
-        }
-        #i4 {
-            order: 3;
-        }
-        #i5 {
-            order: 1;
-        }
-        #i6 {
-            order: -5;
-        }
-        #i7 {
-            order: 2;
+            border: 1px solid;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item" id="i1">S</div>
-        <div class="item" id="i2">A</div>
-        <div class="item" id="i3">U</div>
-        <div class="item" id="i4">O</div>
-        <div class="item" id="i5">T</div>
-        <div class="item" id="i6">G</div>
-        <div class="item" id="i7">V</div>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <!-- Consigo mudar a ordem dos itens -->
+        <div class="item" style="order: -1;">G</div>
+        
     </div>
 </body>
 </html>

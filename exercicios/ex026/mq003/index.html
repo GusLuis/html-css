@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /* Declarações Gerais */
+
+        /* Configurações Gerais */
+
+        @media all {
+            *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+            /* Cor do Curso em Video */
+            text-align: center;
+        }
+
+        h1 {
+            color: aliceblue;
+            text-shadow: 2px 2px 0px #2038f0;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        }
+
+        /* Declarações Retrato */
+
+        @media screen and (orientation:portrait) {
+            body {
+                background-image: url(../mq003/midia/cev-portrait.jpg);
+                background-position: center bottom;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        /* Declarações Paisagem */
+
+        @media screen and (orientation:landscape) {
+            body {
+                background-image: url(../mq003/midia/cev-landscape.jpg);
+                background-position: left bottom;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        
+        /* Declarações Print */
+
+        @media print {
+            body {
+            background-color: #e1e0dc;
+            background-image: url(../mq003/midia/cev-portrait.jpg);
+            background-position: center bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+
+        @media print and (orientation: landscape)  { 
+            body {
+            background-image: url(../mq003/midia/cev-landscape.jpg);
+            background-position: left bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            }
+        }
+
+        h1 {
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: none;
+        }
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+</body>
+</html>

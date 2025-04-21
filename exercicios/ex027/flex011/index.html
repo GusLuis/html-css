@@ -6,36 +6,37 @@
     <title>Flexible Box</title>
     <style>
         div.container {
-            background-color: lightsalmon;
+            background-color: salmon;
+
             display: flex;
-            text-align: center;
             flex-flow: row nowrap;
         }
         div.item {
             background-color: lightblue;
-            border: 1px solid black;
-            flex-basis: 100px;
-            padding: 2px;
+            border: 1px solid;
+            text-align: center;
+            flex-basis: 200px;
         }
-        div#caixaA {
+
+        div#ca {
             flex-shrink: 0;
             flex-grow: 1;
         }
-        div#caixaB {
-            flex-shrink: 1; 
-            flex-grow: 1;
+        div#cb {
+            flex-shrink: 1;
+            flex-grow: 4;
         }
-        div#caixaC {
-            flex-shrink: 5;
-            flex-grow: 1;
+        div#cc {
+            flex-shrink: 4; 
+            flex-grow: 2;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item" id="caixaA">A</div>
-        <div class="item" id="caixaB">B</div>
-        <div class="item" id="caixaC">C</div>
+        <div class="item" id="ca">A</div>
+        <div class="item" id="cb">B</div>
+        <div class="item" id="cc">C</div>
     </div>
 </body>
 </html>

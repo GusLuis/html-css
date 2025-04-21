@@ -6,16 +6,17 @@
     <title>Flexible Box</title>
     <style>
         div.container {
-            background-color: lightsalmon;
+            background-color: salmon;
+
             display: flex;
-            text-align: center;
-            flex-direction: column;
+            flex-flow: column wrap;
         }
         div.item {
             background-color: lightblue;
-            border: 1px solid black;
+            border: 1px solid;
+            text-align: center;
+
             flex: auto;
-            padding: 10px;
         }
     </style>
 </head>
@@ -28,6 +29,7 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        
     </div>
 </body>
 </html>

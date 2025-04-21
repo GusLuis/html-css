@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hamburger</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/midia-query.css">
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        </style>
+</head>
+<body onresize="mudouTamanho ()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção</a></li>
+                <li><a href="#">Opção</a></li>
+                <li><a href="#">Opção</a></li>
+                <li><a href="#">Opção</a></li>
+                <li><a href="#">Opção</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando midia querys</h2>
+            
+            <p>As <strong>Media Queries</strong> são como os olhos do seu design na vastidão de dispositivos que acessam a web. Elas permitem que você aplique estilos CSS diferentes com base nas características do dispositivo em que o site está sendo visualizado. Imagine poder perguntar ao navegador: "Ei, qual é a largura desta tela? É menor que 768 pixels? Ah, então vou aplicar estes estilos mais compactos." É exatamente isso que as Media Queries fazem. Elas verificam condições como largura e altura da tela, tipo de dispositivo (tela, impressão, fala), orientação (retrato ou paisagem) e muito mais. Essa capacidade de adaptação é crucial para garantir que seu site seja agradável e funcional em desktops grandes, tablets de diversos tamanhos e smartphones com telas cada vez menores. Sem as Media Queries, a experiência do usuário seria comprometida, com layouts quebrados, textos ilegíveis e elementos sobrepostos em diferentes dispositivos.</p>
+
+            <p>O <strong>Menu Hamburguer</strong>, por sua vez, é um dos heróis da navegação em telas pequenas. Sabe aquele ícone com três barrinhas horizontais, geralmente posicionado no canto superior da tela em dispositivos móveis? Ele é a representação compacta de um menu de navegação completo. Em telas maiores, onde há espaço de sobra, os links do menu podem ser exibidos de forma clara e direta. No entanto, em telas menores, ocupar toda a largura com uma lista de links seria impraticável e visualmente poluente. É aí que o Menu Hamburguer entra em cena. Ao ser clicado ou tocado, ele revela um menu deslizante ou expansível, contendo todos os links de navegação essenciais. Essa solução inteligente permite que os desenvolvedores ofereçam acesso a todas as seções importantes do site sem sacrificar o espaço precioso da tela em dispositivos móveis, mantendo a interface limpa e focada no conteúdo principal.</p>
+
+            <p>A sinergia entre Media Queries e o Menu Hamburguer é fundamental para a criação de sites responsivos e amigáveis ao usuário. As Media Queries detectam quando a tela atinge um determinado ponto de largura (o famoso "breakpoint") e, nesse momento, o menu tradicional é ocultado, dando lugar ao icônico Menu Hamburguer. Através de JavaScript e CSS, a interação de abrir e fechar o menu é implementada, proporcionando uma navegação intuitiva e otimizada para toque. Essa combinação garante que, independentemente do dispositivo utilizado, o usuário tenha uma experiência de navegação fluida e consiga acessar facilmente todas as partes do seu site. Em um mundo com uma variedade tão grande de dispositivos, dominar essas duas técnicas é essencial para qualquer desenvolvedor web que busca criar experiências online de alta qualidade.</p>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

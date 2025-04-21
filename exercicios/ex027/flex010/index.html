@@ -6,24 +6,39 @@
     <title>Flexible Box</title>
     <style>
         div.container {
-            background-color: lightsalmon;
+            background-color: salmon;
+
             display: flex;
-            text-align: center;
             flex-flow: row nowrap;
         }
         div.item {
             background-color: lightblue;
-            border: 1px solid black;
-            flex-basis: 100px;
-            flex-shrink: 1 ;
+            border: 1px solid;
+            text-align: center;
+            padding: 10px;
+            text-align: center;
+            flex-basis: 250px;
+
+
+            /* Pode diminuir
+            
+            1 = e o padrão e pode diminuir
+            0 = não pode diminuir
+            */
+            flex-shrink: 1;
+
+            /* Pode aumentar
+            
+            1 = pode aumentar
+            0 = e o padrão e não pode aumentar
+            */
             flex-grow: 1;
-            padding: 2px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam repellat qui aliquam itaque quo provident blanditiis ratione ex animi sed nihil debitis reiciendis, obcaecati repellendus asperiores autem neque vitae totam.</div>
+        <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
     </div>
